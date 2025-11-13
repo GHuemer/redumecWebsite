@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entre em contato com a REDUMEC. Endereço, telefone, e-mail e formulário para solicitar orçamento.">
+    <title>Contato - REDUMEC</title>
+    <link rel="icon" href="assets/img/logo-redumec.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .contact-info h3 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .contact-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-item strong {
+            color: var(--text-dark);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-item a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-item a:hover {
+            color: var(--primary-dark);
+        }
+
+        .contact-form {
+            background-color: var(--light-bg);
+            padding: 2rem;
+            border-radius: 0.75rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--text-dark);
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid var(--border-color);
+            border-radius: 0.5rem;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(8, 145, 178, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .form-submit {
+            width: 100%;
+            padding: 1rem;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+            color: var(--white);
+            border: none;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .form-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="assets/img/logo-redumec.png" alt="Logo REDUMEC"></a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="institucional.html">Institucional</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Reduzido -->
+        <section style="background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%); color: var(--white); padding: 3rem 0; text-align: center;">
+            <div class="container">
+                <h1 style="font-size: 2.5rem; margin-bottom: 0.5rem;">Fale Conosco</h1>
+                <p style="font-size: 1.125rem; opacity: 0.95;">Estamos prontos para atender suas dúvidas</p>
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section style="padding: 5rem 0;">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Informações de Contato</h3>
+                        <div class="contact-item">
+                            <strong>📍 Endereço</strong>
+                            <p>Rua Arthur Ianni, 257 – Bairro Vila Industrial<br>Itu/SP</p>
+                        </div>
+                        <div class="contact-item">
+                            <strong>📞 Telefone</strong>
+                            <a href="tel:+551124292069">(+55 11) 2429 – 2069</a>
+                        </div>
+                        <div class="contact-item">
+                            <strong>📱 Celular/WhatsApp</strong>
+                            <a href="https://wa.me/5511994113784" target="_blank">(+55 11) 94113 – 7834</a>
+                        </div>
+                        <div class="contact-item">
+                            <strong>📧 E-mail (Serviços)</strong>
+                            <a href="mailto:servicos@redumec.com.br">servicos@redumec.com.br</a>
+                        </div>
+                        <div class="contact-item">
+                            <strong>📧 E-mail (Vendas)</strong>
+                            <a href="mailto:vendas@redumec.com.br">vendas@redumec.com.br</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <h3 style="color: var(--primary-color); margin-bottom: 1.5rem;">Envie sua Mensagem</h3>
+                        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                            <div class="form-group">
+                                <label for="name">Nome Completo *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefone / WhatsApp *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Empresa</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensagem *</label>
+                                <textarea id="message" name="message" required></textarea>
+                            </div>
+                            <button type="submit" class="form-submit">Enviar Mensagem</button>
+                        </form>
+                        <p style="color: var(--text-light); font-size: 0.85rem; margin-top: 1rem; text-align: center;">Ou entre em contato via <a href="https://wa.me/5511994113784" target="_blank" style="color: var(--primary-color);">WhatsApp</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mapa -->
+        <section style="background-color: var(--light-bg);">
+            <div class="container">
+                <h2 class="section-title">Localização</h2>
+                <div style="width: 100%; height: 400px; border-radius: 0.75rem; overflow: hidden; box-shadow: var(--shadow-md); margin-top: 2rem;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.5471851234567!2d-47.29!3d-23.27!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf5c5c5c5c5c5d%3A0x5c5c5c5c5c5c5c5c!2sRua%20Arthur%20Ianni%2C%20257%20-%20Vila%20Industrial%2C%20Itu%2FSP!5e0!3m2!1spt-BR!2sbr!4v1234567890" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4>REDUMEC</h4>
+                    <p>Soluções em Acionamentos Industriais</p>
+                </div>
+                <div>
+                    <h4>Contato</h4>
+                    <p>📞 (11) 2429 – 2069</p>
+                    <p>📱 (11) 94113 – 7834</p>
+                    <a href="mailto:servicos@redumec.com.br">📧 servicos@redumec.com.br</a>
+                </div>
+                <div>
+                    <h4>Siga-nos</h4>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/juan-guillermo-huemer-4613a930/" target="_blank" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.instagram.com/redumec_redutores/" target="_blank" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 REDUMEC. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/5511994113784?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento." 
+       style="position: fixed; bottom: 2rem; right: 2rem; width: 60px; height: 60px; background: linear-gradient(135deg, #25d366 0%, #128c7e 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--white); font-size: 1.8rem; text-decoration: none; box-shadow: var(--shadow-lg); transition: all 0.3s ease; z-index: 99;" 
+       target="_blank" aria-label="Fale conosco pelo WhatsApp" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+       <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
